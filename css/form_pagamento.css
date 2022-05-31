@@ -1,0 +1,163 @@
+fieldset {
+	border: none;
+}
+
+form {
+	background-color: none;
+	max-width: 450px;
+	max-height: 100%;
+	padding: 5px;
+	top: 100%;
+	left: 35%;
+	margin: 3rem 0 3rem 0;
+	position: relative;
+}
+
+#titulo {
+	text-align: center;
+	font-family: Helvética, Sans-serif;
+	font-size: 33px;
+}
+
+#subtitulo-aviso {
+	text-align: center;
+	font-size: 19px;
+	margin: 1.5rem;
+
+}
+
+#subtitulo {
+	text-align: center;
+	font-family: Geneva, Tahoma, sans-serif;
+	font-size: 25px;
+	padding: 1.5rem 0 1.5rem;
+}
+
+.campo input[type=text],
+#cep,
+#nome_cartao {
+
+	border: none;
+	outline: 0;
+	border: 1px solid #dcd0e0;
+	width: 26rem;
+	height: 3rem;
+	padding: 17px;
+	font-size: 15px;
+	margin-bottom: 0.8rem;
+}
+
+input[type=number],
+#complemento {
+	border: none;
+	outline: 0;
+	float: left;
+	border: 1px solid #dcd0e0;
+	width: 12.82rem;
+	height: 3.2rem;
+	padding: 17px;
+	font-size: 15px;
+	margin-bottom: 0.8rem;
+	margin-right: 0.4rem;
+}
+
+select {
+	border: none;
+	float: left;
+	width: 12.82rem;
+	height: 3.2rem;
+	border: 1px solid #dcd0e0;
+	padding: 12px;
+	margin-right: 0.4rem;
+	font-size: 15px;
+	margin-bottom: 0.8rem;
+}
+
+/*Link para descobrir o CEP */
+#link_cep {
+	position: relative;
+	float: right;
+	bottom: 2.65rem;
+	right: 2.5rem;
+	font-size: 10px;
+	font-family: Calibri, sans-serif;
+	transition: 1s;
+	color:black;
+}
+
+#link_cep:hover {
+	color: #c11f00;
+}
+
+#numero_cartao,
+#bandeira {
+
+	float: left;
+	height: 3.2rem;
+	width: 12.82rem;
+	padding: 17px;
+	font-size: 15px;
+	margin-bottom: 0.8rem;
+	margin-right: 0.4rem;
+	border: none;
+	border: 1px solid #dcd0e0;
+	outline: 0;
+
+}
+
+#vencimento,
+#cvv {
+	float: left;
+	height: 3.2rem;
+	width: 12.82rem;
+	padding: 17px;
+	font-size: 15px;
+	margin-right: 0.4rem;
+	border: none;
+	border: 1px solid #dcd0e0;
+	outline: 0;
+}
+
+#subtitulo-informativo {
+	font-size: 18px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-family: Calibri, sans-serif;
+
+}
+
+/*Retirando a seta do number */
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+
+}
+
+/*botao cadastro */
+#button-button {
+	cursor: pointer;
+	border: none;
+	border: 1px solid #e4e0e6;
+	width: 20rem;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	margin: 10rem 0 0 3rem;
+	background: black;
+	padding: 14px;
+	color: white;
+	font-size: 15px;
+	transition: 0.4s;
+	text-transform: uppercase;
+}
+
+#button-button:hover {
+	opacity: 0.8;
+	transition: 0.4s;
+
+}

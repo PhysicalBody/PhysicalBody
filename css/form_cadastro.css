@@ -1,0 +1,65 @@
+fieldset {
+    border: none;
+}
+
+.form-group{
+    padding-top: 55px;
+}
+
+#titulo {
+    text-align: center;
+    font-family: Helvética, Sans-serif;
+    font-size: 35px;
+}
+
+#subtitulo {
+    text-align: center;
+    font-family: Helvética, Sans-serif;
+    font-size: 17px;
+    margin: 1.5rem auto 2rem;
+}
+
+.campo input[type=text],
+input[type=email],
+input[type=password] {
+    border: none;
+    outline: 0;
+    border: 1px solid #dcd0e0;
+    width: 26rem;
+    height: 3.2rem;
+    padding: 17px;
+    font-size: 15px;
+    margin-bottom: 0.8rem;
+}
+
+label {
+    font-size: 16px;
+    font-family: Helvética, Sans-serif;
+}
+
+input[type=radio] {
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+/*botao cadastro */
+#button-button {
+    background: black;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #e4e0e6;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    margin: 1.8rem auto 3.5rem;
+    padding: 14px;
+    color: white;
+    transition: 1.5s;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#button-button:hover {
+    opacity: 0.80;
+    transition: 0.3s
+}
