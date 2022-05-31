@@ -1,0 +1,75 @@
+.login-container {
+  min-height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.login-box {
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+}
+
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+
+input[type=text],
+input[type=password] {
+
+  border: none;
+  outline: 0;
+  border: 1px solid #dcd0e0;
+  width: 20rem;
+  height: 3.2rem;
+  padding: 17px;
+  font-size: 15px;
+  margin-bottom: 0.8rem;
+}
+
+form i {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.btn-esqueci a {
+  color: black !important;
+}
+
+.btn-esqueci a:hover {
+  opacity: 0.80;
+  transition: 0.3s;
+}
+
+.btn-entrar {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 8%;
+}
+
+.btn-entrar input {
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  background: black;
+  font-weight: bold;
+  border-style: none;
+}
+
+.btn-entrar input:hover {
+  opacity: 0.80;
+  transition: 0.3s;
+}

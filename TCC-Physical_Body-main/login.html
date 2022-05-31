@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="images/TCC-logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+	<link rel="stylesheet" href="css/html_login.css">
+    <link rel="stylesheet" href="css/navbar_secundario.css">
+    <link rel="stylesheet" href="css/form_login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="nav-logo" href="index.html">Physical Body</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-container justify-content-center">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <div class="user-box">
+                    <input type="text" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="password" id="password" placeholder="Senha" required>
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                </div>
+                <div class="btn-esqueci">
+                    <a href="recuperar-senha.php">
+                        Esqueci minha senha
+                    </a>
+                </div>
+                <div class="btn-entrar">
+                    <input type="submit" value="Entrar">
+                </div>
+            </form>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="main-footer">
+                <div id="contato">
+                    <h1>Contato</h1>
+                    <div class="contato-detalhes">
+                        <a href="tel:+5521999999999">Celular: +55 (21) 99999-9999</a>
+                        <a href="mailto:Physicalbody00@gmail">Email: Physicalbody00@gmail.com</a>
+                    </div>
+                    <div class="endereco-detalhes">
+                        <h1>Endereço</h1>
+                        <p>Praça da Bandeira, Zona Norte, Rio de Janeiro</p>
+                    </div>
+                </div>
+                <div class="redes-sociais">
+                    <h1>Redes Sociais</h1>
+                    <div class="sociallogos">
+                        <a href="#"><img src="images/instagram-icon.svg">Instagram</a>
+                        <a href="#"><img src="images/facebook-icon.svg">Facebook</a>
+                        <a href="#"><img src="images/twitter-icon.svg">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <span>&copy; Physical Body Copyright 2009 All Rights Reserved</span>
+        </section>
+    </footer>
+    <script src="scripts/password.js"></script>
+</body>
+
+</html>

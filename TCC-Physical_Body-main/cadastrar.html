@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <meta name="keywords" content="Cadastro, Physical_Body, Academia">
+    <meta name="descrition" content="O site da melhor academia existente.">
+    <link rel="icon" href="images/TCC-logo.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html_cadastro.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar_secundario.css">
+    <link rel="stylesheet" type="text/css" href="css/form_cadastro.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script defer src="scripts/habilita_cidade.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="nav-logo" href="index.html">Physical Body</a>
+        </nav>
+    </header>
+    <div class="form-group d-flex justify-content-center">
+        <form action="usuariocadastrar.php" method="post" id="form_cadastro">
+            <h1 id="titulo">FAÇA SEU CADASTRO </h1>
+            <p id="subtitulo">Preencha com seus dados abaixo!</p>
+
+            <fieldset>
+                <div class="container">
+                    <div class="campo">
+                        <label for="nome">
+                            <input type="text" name="nome" id="name" minlength="13" maxlength="45"
+                                placeholder="Nome Completo" autocomplete="off" required>
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">
+                            <input type="email" name="email" id="email" maxlength="50" placeholder="Email"
+                                autocomplete="off" required>
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cpf">
+                            <input type="text" name="cpf" id="cpf" placeholder="CPF" maxlength="11" autocomplete="off"
+                                onkeypress="$(this).mask('000.000.000-AA')" required>
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="data">
+                            <input type="text" name="Data" id="data" maxlength="10" placeholder="Data de Nascimento"
+                                onkeypress="$(this).mask('00/00/0000')" autocomplete="off" required>
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">
+                            <input type="text" name="telefone" id="telefone" placeholder="Celular" maxlength="15"
+                                autocomplete="off" onkeypress="$(this).mask('(00) 00000-0000')" required>
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="senha">
+                            <input type="password" name="senha" id="senha" maxlength="16" minlength="8"
+                                placeholder="Senha" required>
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="confirma-senha">
+                            <input type="password" name="confirma_senha" id="confirmar" maxlength="16" minlength="8"
+                                placeholder="Confirmar Senha" required>
+                        </label>
+                    </div>
+
+                    <div class="sexo">
+                        <label for="sexo"><strong>Sexo: </strong><br>
+                            <input type="radio" name="sexo" value="Masculino" /> Masculino<br>
+                            <input type="radio" name="sexo" value="Feminino" /> Feminino<br>
+                            <input type="radio" name="sexo" value="indefinido" /> Outro
+                        </label>
+                    </div>
+
+                </div class="campo">
+                <input type='submit' id='button-button' value="Continuar">
+    </div>
+    </fieldset>
+    </form>
+
+    <footer>
+        <section>
+            <div class="main-footer">
+                <div id="contato">
+                    <h1>Contato</h1>
+                    <div class="contato-detalhes">
+                        <a href="tel:+5521999999999">Celular: +55 (21) 99999-9999</a>
+                        <a href="mailto:Physicalbody00@gmail">Email: Physicalbody00@gmail.com</a>
+                    </div>
+                    <div class="endereco-detalhes">
+                        <h1>Endereço</h1>
+                        <p>Praça da Bandeira, Zona Norte, Rio de Janeiro</p>
+                    </div>
+                </div>
+                <div class="redes-sociais">
+                    <h1>Redes Sociais</h1>
+                    <div class="sociallogos">
+                        <a href="#"><img src="images/instagram-icon.svg">Instagram</a>
+                        <a href="#"><img src="images/facebook-icon.svg">Facebook</a>
+                        <a href="#"><img src="images/twitter-icon.svg">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <span>&copy; Physical Body Copyright 2009 All Rights Reserved</span>
+        </section>
+    </footer>
+</body>
+
+</html>

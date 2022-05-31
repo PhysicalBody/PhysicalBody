@@ -1,0 +1,104 @@
+#planos{
+  background-color: #eee;
+}
+
+#planos .block-heading {
+  padding-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#planos .block-heading h2 {
+  color: black; 
+}
+
+#planos .block-heading span{
+  color: #E86C11;
+}
+
+#planos .heading {
+  text-align: center;
+  padding-bottom: 10px;
+  background: black;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.heading{
+  width: 100%;
+  padding-top: 30px;
+}
+
+.heading h3{
+  color: white;
+}
+
+#planos .item {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+  padding: 30px;
+  overflow: hidden;
+  position: relative; 
+  border-radius: 0px 0px 20px 20px;
+}
+
+#planos .col-md-5:not(:last-child) .item {
+  margin-bottom: 30px; 
+}
+
+#planos .item a {
+  font-weight: 600; 
+  background: black;
+  color: white;
+}
+
+#planos .item a:hover{
+  background: #E86C11;
+}
+
+#planos .ribbon {
+  width: 160px;
+  height: 32px;
+  font-size: 12px;
+  text-align: center;
+  color: #E86C11;
+  font-weight: bold;
+  box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);
+  background: black;
+  transform: rotate(45deg);
+  right: -42px;
+  top: 20px;
+  padding-top: 7px; 
+}
+
+#planos .item p {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.7; 
+}
+
+#planos .features .feature {
+  font-weight: 600; 
+}
+
+#planos .features p {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 5px; 
+  color: #E86C11; 
+  border-bottom: 1px solid #E86C11;
+  padding-bottom: 20px;
+}
+
+#planos .price h4 {
+  margin: 15px 0;
+  font-size: 45px;
+  text-align: center;
+  color: #E86C11; 
+}
+
+#planos .buy-now a {
+  text-align: center;
+  margin: auto;
+  font-weight: 600;
+  padding: 9px 0; 
+}
