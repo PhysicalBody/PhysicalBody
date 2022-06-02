@@ -13,7 +13,7 @@ $campoacesso = $_POST["acesso"];
 require 'conexao.php';
 
 //Sql que altera um registro da tabela usuários
-$sql = "UPDATE usuarios SET nome='" . $camponome . "', email='" . $campoemail . "', acesso='" . $campoacesso . "' WHERE id=" . $campoid;
+$sql = "UPDATE usuario SET nome='" . $camponome . "', email='" . $campoemail . "', acesso='" . $campoacesso . "' WHERE id=" . $campoid;
 
 //Executa o sql e faz tratamento de erro.
 if ($conn->query($sql) === TRUE) {

@@ -10,7 +10,7 @@ $campoid = $_GET["id"];
 require 'conexao.php';
 
 //Cria o SQL (consulte tudo da tabela usuarios)
-$sql = "SELECT * FROM usuarios WHERE Id = $campoid";
+$sql = "SELECT * FROM usuario WHERE Id = $campoid";
 
 //Executa o SQL
 $result = $conn->query($sql);

@@ -10,7 +10,7 @@ $campoid = $_GET["id"];
 require 'conexao.php';
 
 // Apagar da tabela usuários o registro com o id
-$sql = "DELETE FROM usuarios WHERE id=$campoid";
+$sql = "DELETE FROM usuario WHERE id=$campoid";
 
 //Executa o sql e faz tratamento de erro.
 if ($conn->query($sql) === TRUE) {

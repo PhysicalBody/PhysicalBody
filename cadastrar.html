@@ -12,9 +12,11 @@
     <link rel="stylesheet" type="text/css" href="css/navbar_secundario.css">
     <link rel="stylesheet" type="text/css" href="css/form_cadastro.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="jquery.mask.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
     <script defer src="scripts/habilita_cidade.js"></script>
-
 </head>
 
 <body>
@@ -24,7 +26,8 @@
         </nav>
     </header>
     <div class="form-group d-flex justify-content-center">
-        <form action="usuariocadastrar.php" method="post" id="form_cadastro">
+
+        <form action="cadastrar.php" method="post">
             <h1 id="titulo">FAÇA SEU CADASTRO </h1>
             <p id="subtitulo">Preencha com seus dados abaixo!</p>
 
@@ -32,7 +35,7 @@
                 <div class="container">
                     <div class="campo">
                         <label for="nome">
-                            <input type="text" name="nome" id="name" minlength="13" maxlength="45"
+                            <input type="text" name="nome" id="nome" minlength="13" maxlength="45"
                                 placeholder="Nome Completo" autocomplete="off" required>
                         </label>
                     </div>
@@ -53,14 +56,14 @@
 
                     <div class="campo">
                         <label for="data">
-                            <input type="text" name="Data" id="data" maxlength="10" placeholder="Data de Nascimento"
+                            <input type="text" name="nascimento" id="nascimento" maxlength="10" placeholder="Data de Nascimento"
                                 onkeypress="$(this).mask('00/00/0000')" autocomplete="off" required>
                         </label>
                     </div>
 
                     <div class="campo">
-                        <label for="telefone">
-                            <input type="text" name="telefone" id="telefone" placeholder="Celular" maxlength="15"
+                        <label for="celular">
+                            <input type="text" name="celular" id="celular" placeholder="Celular" maxlength="15"
                                 autocomplete="off" onkeypress="$(this).mask('(00) 00000-0000')" required>
                         </label>
                     </div>
@@ -73,8 +76,8 @@
                     </div>
 
                     <div class="campo">
-                        <label for="confirma-senha">
-                            <input type="password" name="confirma_senha" id="confirmar" maxlength="16" minlength="8"
+                        <label for="confirma_senha">
+                            <input type="password" name="confirma_senha" id="confirma_senha" maxlength="16" minlength="8"
                                 placeholder="Confirmar Senha" required>
                         </label>
                     </div>

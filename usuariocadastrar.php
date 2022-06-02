@@ -13,7 +13,7 @@ $campoacesso = $_POST["acesso"];
 require 'conexao.php';
 
 //Insere na tabela os valores dos campos
-$sql = "INSERT INTO usuarios(nome, email, senha, acesso) VALUES('$camponome', '$campoemail', '$camposenha', '$campoacesso')";
+$sql = "INSERT INTO usuario(nome, email, senha, acesso) VALUES('$camponome', '$campoemail', '$camposenha', '$campoacesso')";
 
 //Executa o SQL e faz tratamento de erros
 if ($conn->query($sql) === TRUE) {

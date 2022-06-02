@@ -10,7 +10,7 @@ if($_SESSION['acesso']=="Admin") {
     require 'conexao.php';
 
     //Cria o SQL (consulte tudo da tabela usuarios)
-    $sql="SELECT * FROM usuarios";
+    $sql="SELECT * FROM usuario";
 
     //Executa o SQL
     $result=$conn->query($sql);

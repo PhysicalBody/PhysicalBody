@@ -9,7 +9,7 @@ $camposenha = $_POST["senha"];
 require 'conexao.php';
 
 //Cria o SQL (consulte tudo na tabela usuarios com o email digitado no form)
-$sql = "SELECT * FROM usuarios WHERE email='$campoemail'";
+$sql = "SELECT * FROM usuario WHERE email='$campoemail'";
 
 //Executa o SQL
 $result = $conn->query($sql);
